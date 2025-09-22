@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XAI Network IDS - Analysis Report</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; line-height: 1.6; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; text-align: center; border-radius: 10px; margin-bottom: 20px; }
+        .section { background: white; margin: 20px 0; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .metric { display: inline-block; background: #3498db; color: white; padding: 10px 20px; margin: 5px; border-radius: 5px; }
+        .signature { background: #ecf0f1; padding: 15px; margin: 10px 0; border-left: 4px solid #3498db; border-radius: 5px; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #3498db; color: white; }
+        .high-importance { background-color: #e74c3c; color: white; }
+        .medium-importance { background-color: #f39c12; color: white; }
+        .low-importance { background-color: #3498db; color: white; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>XAI Network Intrusion Detection System</h1>
+        <h2>Analysis Report</h2>
+        <p>Generated: 2025-09-21 23:15:52</p>
+    </div>
+    <div class="section">
+        <h2>Executive Summary</h2>
+        <div class="metric">Best Model: LightGBM</div>
+        <div class="metric">Accuracy: 0.8733</div>
+        <div class="metric">F1-Score: 0.8906</div>
+        <div class="metric">Classes: 10</div>
+        <div class="metric">Features: 40</div>
+        <p>Performance Level: <strong>Fair</strong></p>
+    </div>
+    <div class="section">
+        <h2>Model Performance</h2>
+        <table>
+            <tr><th>Metric</th><th>Value</th><th>Assessment</th></tr>
+            <tr><td>Accuracy</td><td>0.8733</td><td>Fair</td></tr>
+            <tr><td>F1-Score</td><td>0.8906</td><td>Fair</td></tr>
+            <tr><td>Model Type</td><td>LightGBM</td><td>Tree-based (High Interpretability)</td></tr>
+        </table>
+    </div>
+    <div class="section">
+        <h2>Feature Importance</h2>
+        <table>
+            <tr><th>Rank</th><th>Feature</th><th>Importance</th></tr>
+            <tr class="high-importance">
+                <td>1</td>
+                <td>sbytes</td>
+                <td>10995.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>2</td>
+                <td>ct_dst_src_ltm</td>
+                <td>10166.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>3</td>
+                <td>ct_src_ltm</td>
+                <td>10131.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>4</td>
+                <td>smean</td>
+                <td>9747.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>5</td>
+                <td>ct_srv_src</td>
+                <td>9575.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>6</td>
+                <td>bytes_ratio</td>
+                <td>9535.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>7</td>
+                <td>bytes_per_second</td>
+                <td>9125.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>8</td>
+                <td>total_bytes</td>
+                <td>7807.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>9</td>
+                <td>dur</td>
+                <td>7711.0000</td>
+            </tr>
+            <tr class="high-importance">
+                <td>10</td>
+                <td>ct_srv_dst</td>
+                <td>7703.0000</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section">
+        <h2>Technical Details</h2>
+        <table>
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td>Dataset</td><td>UNSW-NB15</td></tr>
+            <tr><td>Best Model</td><td>LightGBM</td></tr>
+            <tr><td>Features Used</td><td>40</td></tr>
+            <tr><td>Attack Classes</td><td>10</td></tr>
+            <tr><td>Training Samples</td><td>75267</td></tr>
+            <tr><td>Test Samples</td><td>37488</td></tr>
+        </table>
+    </div>
+    <div class="section">
+        <h2>Generated Files</h2>
+        <ul>
+            <li><code>final_results.pkl</code> - Complete analysis results</li>
+            <li><code>part3_xai_analysis.png</code> - XAI visualizations</li>
+            <li><code>xai_comprehensive_report.html</code> - This report</li>
+        </ul>
+    </div>
+</body>
+</html>
